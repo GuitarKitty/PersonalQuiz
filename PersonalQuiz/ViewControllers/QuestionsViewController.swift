@@ -35,15 +35,11 @@ class QuestionsViewController: UIViewController {
         questions[questionIndex].answers
     }
   
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
     }
 
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
         if segue.identifier == "showResult" {
             guard let resultVC = segue.destination as? ResultsViewController else { return }

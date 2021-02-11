@@ -78,9 +78,8 @@ class ResultsViewController: UIViewController {
         }
         
         // MARK: - Compute and show result
-        print(maxPointAnimal)
+        
         let max = maxPointAnimal.map({$0}).max()
-        print(max)
         if maxPointAnimal[0] == max {
             animalTypeLabel.text = "Вы - 🐶"
             animalTextLabel.text = AnimalType.dog.definition
